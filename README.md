@@ -7,7 +7,7 @@ This project represents my attempt to develop a secure solution for machine acce
 
 
 ![Alt Text](media/disc.png "High level view of solution")
-## Solution
+## Solution img 
 
 ## UA Secure client
 
@@ -19,7 +19,7 @@ In this project, we're using the **open62541pp** library ([GitHub](https://githu
 
 Another option, if you're trying to replicate this project in **Python**, would be **opcua-asyncio** ([GitHub](https://github.com/FreeOpcUa/opcua-asyncio)). I previously worked on a similar project using this library ([Remote_UA](https://github.com/MisanExe/Remote_UA)). You can take a look to get a sense of how it works.
 
-In our case were using 
+In our case were using **open62541** to build our secure client.
 
-### Build instructions to build our secure client
+### Build instructions
 #### Add build instructions for open62541pp here
