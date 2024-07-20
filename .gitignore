@@ -1,0 +1,21 @@
+# Ignore all files with a specific extension
+*.log
+*.tmp
+
+# Ignore specific directories
+/build/
+/dist/
+/node_modules/
+
+# Compiled source files
+*.class
+*.o
+*.so
+*.dll
+*.exe
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
