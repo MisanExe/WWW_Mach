@@ -18,7 +18,7 @@
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "",
 			"projects" : 
 			[
 				{
@@ -38,7 +38,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "MyOPC_Client::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-MyOPC_Client-Debug-ea3e6fd1e18f8a88a005.json",
+					"jsonFile" : "target-MyOPC_Client-3fa890fb0955c5269203.json",
 					"name" : "MyOPC_Client",
 					"projectIndex" : 0
 				}
@@ -48,8 +48,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/OPCpi/UA_dir/build",
-		"source" : "/home/OPCpi/UA_dir"
+		"build" : "/home/OPCpi/WWW_Mach/UA_SecureClient/build",
+		"source" : "/home/OPCpi/WWW_Mach/UA_SecureClient"
 	},
 	"version" : 
 	{

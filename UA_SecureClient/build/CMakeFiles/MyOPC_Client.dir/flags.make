@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DUA_ARCHITECTURE_POSIX
 
-CXX_INCLUDES = -I/usr/local/include/open62541pp
+CXX_INCLUDES = -I/usr/local/include/open62541pp -I/home/OPCpi/WWW_Mach/UA_SecureClient/include
 
-CXX_FLAGS = -g -std=gnu++17
+CXX_FLAGS = -std=gnu++17
 

@@ -63,10 +63,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/OPCpi/UA_dir
+CMAKE_SOURCE_DIR = /home/OPCpi/WWW_Mach/UA_SecureClient
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/OPCpi/UA_dir/build
+CMAKE_BINARY_DIR = /home/OPCpi/WWW_Mach/UA_SecureClient/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -93,14 +93,14 @@ clean: CMakeFiles/MyOPC_Client.dir/clean
 CMakeFiles/MyOPC_Client.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyOPC_Client.dir/build.make CMakeFiles/MyOPC_Client.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyOPC_Client.dir/build.make CMakeFiles/MyOPC_Client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/OPCpi/UA_dir/build/CMakeFiles --progress-num=1,2 "Built target MyOPC_Client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/OPCpi/WWW_Mach/UA_SecureClient/build/CMakeFiles --progress-num=1,2,3 "Built target MyOPC_Client"
 .PHONY : CMakeFiles/MyOPC_Client.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MyOPC_Client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/OPCpi/UA_dir/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/OPCpi/WWW_Mach/UA_SecureClient/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MyOPC_Client.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/OPCpi/UA_dir/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/OPCpi/WWW_Mach/UA_SecureClient/build/CMakeFiles 0
 .PHONY : CMakeFiles/MyOPC_Client.dir/rule
 
 # Convenience name for target.

@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/OPCpi/UA_dir/build",
-  "command": "/usr/bin/c++ -DUA_ARCHITECTURE_POSIX -I/usr/local/include/open62541pp -g -std=gnu++17 -o CMakeFiles/MyOPC_Client.dir/src/example_client.cpp.o -c /home/OPCpi/UA_dir/src/example_client.cpp",
-  "file": "/home/OPCpi/UA_dir/src/example_client.cpp"
-}
-]

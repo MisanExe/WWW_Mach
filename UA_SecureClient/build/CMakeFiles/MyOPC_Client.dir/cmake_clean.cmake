@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/MyOPC_Client.dir/src/example_client.cpp.o"
+  "CMakeFiles/MyOPC_Client.dir/src/service.cpp.o"
   "MyOPC_Client"
   "MyOPC_Client.pdb"
 )

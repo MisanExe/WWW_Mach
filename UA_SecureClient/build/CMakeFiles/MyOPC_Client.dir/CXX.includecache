@@ -6,11 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/OPCpi/UA_dir/src/example_client.cpp
+/home/OPCpi/WWW_Mach/UA_SecureClient/include/service.h
+open62541pp/open62541pp.h
+/home/OPCpi/WWW_Mach/UA_SecureClient/include/open62541pp/open62541pp.h
+open62541pp/Node.h
+/home/OPCpi/WWW_Mach/UA_SecureClient/include/open62541pp/Node.h
+
+/home/OPCpi/WWW_Mach/UA_SecureClient/src/service.cpp
+../include/service.h
+/home/OPCpi/WWW_Mach/UA_SecureClient/include/service.h
 iostream
 -
-open62541pp/open62541pp.h
-/home/OPCpi/UA_dir/src/open62541pp/open62541pp.h
-open62541pp/Node.h
-/home/OPCpi/UA_dir/src/open62541pp/Node.h
 

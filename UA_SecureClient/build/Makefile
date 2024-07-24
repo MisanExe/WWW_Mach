@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/OPCpi/UA_dir
+CMAKE_SOURCE_DIR = /home/OPCpi/WWW_Mach/UA_SecureClient
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/OPCpi/UA_dir/build
+CMAKE_BINARY_DIR = /home/OPCpi/WWW_Mach/UA_SecureClient/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/OPCpi/UA_dir/build/CMakeFiles /home/OPCpi/UA_dir/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/OPCpi/WWW_Mach/UA_SecureClient/build/CMakeFiles /home/OPCpi/WWW_Mach/UA_SecureClient/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/OPCpi/UA_dir/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/OPCpi/WWW_Mach/UA_SecureClient/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -169,6 +169,33 @@ src/example_client.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyOPC_Client.dir/build.make CMakeFiles/MyOPC_Client.dir/src/example_client.cpp.s
 .PHONY : src/example_client.cpp.s
 
+src/service.o: src/service.cpp.o
+
+.PHONY : src/service.o
+
+# target to build an object file
+src/service.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyOPC_Client.dir/build.make CMakeFiles/MyOPC_Client.dir/src/service.cpp.o
+.PHONY : src/service.cpp.o
+
+src/service.i: src/service.cpp.i
+
+.PHONY : src/service.i
+
+# target to preprocess a source file
+src/service.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyOPC_Client.dir/build.make CMakeFiles/MyOPC_Client.dir/src/service.cpp.i
+.PHONY : src/service.cpp.i
+
+src/service.s: src/service.cpp.s
+
+.PHONY : src/service.s
+
+# target to generate assembly for a file
+src/service.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyOPC_Client.dir/build.make CMakeFiles/MyOPC_Client.dir/src/service.cpp.s
+.PHONY : src/service.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -181,6 +208,9 @@ help:
 	@echo "... src/example_client.o"
 	@echo "... src/example_client.i"
 	@echo "... src/example_client.s"
+	@echo "... src/service.o"
+	@echo "... src/service.i"
+	@echo "... src/service.s"
 .PHONY : help
 
 

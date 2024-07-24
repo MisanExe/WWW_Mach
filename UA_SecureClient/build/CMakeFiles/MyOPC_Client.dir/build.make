@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/OPCpi/UA_dir
+CMAKE_SOURCE_DIR = /home/OPCpi/WWW_Mach/UA_SecureClient
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/OPCpi/UA_dir/build
+CMAKE_BINARY_DIR = /home/OPCpi/WWW_Mach/UA_SecureClient/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/MyOPC_Client.dir/depend.make
@@ -78,32 +78,47 @@ include CMakeFiles/MyOPC_Client.dir/flags.make
 
 CMakeFiles/MyOPC_Client.dir/src/example_client.cpp.o: CMakeFiles/MyOPC_Client.dir/flags.make
 CMakeFiles/MyOPC_Client.dir/src/example_client.cpp.o: ../src/example_client.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/OPCpi/UA_dir/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyOPC_Client.dir/src/example_client.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyOPC_Client.dir/src/example_client.cpp.o -c /home/OPCpi/UA_dir/src/example_client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/OPCpi/WWW_Mach/UA_SecureClient/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyOPC_Client.dir/src/example_client.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyOPC_Client.dir/src/example_client.cpp.o -c /home/OPCpi/WWW_Mach/UA_SecureClient/src/example_client.cpp
 
 CMakeFiles/MyOPC_Client.dir/src/example_client.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyOPC_Client.dir/src/example_client.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/OPCpi/UA_dir/src/example_client.cpp > CMakeFiles/MyOPC_Client.dir/src/example_client.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/OPCpi/WWW_Mach/UA_SecureClient/src/example_client.cpp > CMakeFiles/MyOPC_Client.dir/src/example_client.cpp.i
 
 CMakeFiles/MyOPC_Client.dir/src/example_client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyOPC_Client.dir/src/example_client.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/OPCpi/UA_dir/src/example_client.cpp -o CMakeFiles/MyOPC_Client.dir/src/example_client.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/OPCpi/WWW_Mach/UA_SecureClient/src/example_client.cpp -o CMakeFiles/MyOPC_Client.dir/src/example_client.cpp.s
+
+CMakeFiles/MyOPC_Client.dir/src/service.cpp.o: CMakeFiles/MyOPC_Client.dir/flags.make
+CMakeFiles/MyOPC_Client.dir/src/service.cpp.o: ../src/service.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/OPCpi/WWW_Mach/UA_SecureClient/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyOPC_Client.dir/src/service.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyOPC_Client.dir/src/service.cpp.o -c /home/OPCpi/WWW_Mach/UA_SecureClient/src/service.cpp
+
+CMakeFiles/MyOPC_Client.dir/src/service.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyOPC_Client.dir/src/service.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/OPCpi/WWW_Mach/UA_SecureClient/src/service.cpp > CMakeFiles/MyOPC_Client.dir/src/service.cpp.i
+
+CMakeFiles/MyOPC_Client.dir/src/service.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyOPC_Client.dir/src/service.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/OPCpi/WWW_Mach/UA_SecureClient/src/service.cpp -o CMakeFiles/MyOPC_Client.dir/src/service.cpp.s
 
 # Object files for target MyOPC_Client
 MyOPC_Client_OBJECTS = \
-"CMakeFiles/MyOPC_Client.dir/src/example_client.cpp.o"
+"CMakeFiles/MyOPC_Client.dir/src/example_client.cpp.o" \
+"CMakeFiles/MyOPC_Client.dir/src/service.cpp.o"
 
 # External object files for target MyOPC_Client
 MyOPC_Client_EXTERNAL_OBJECTS =
 
 MyOPC_Client: CMakeFiles/MyOPC_Client.dir/src/example_client.cpp.o
+MyOPC_Client: CMakeFiles/MyOPC_Client.dir/src/service.cpp.o
 MyOPC_Client: CMakeFiles/MyOPC_Client.dir/build.make
 MyOPC_Client: /usr/local/lib/arm-linux-gnueabihf/libopen62541pp.a
 MyOPC_Client: /usr/local/lib/arm-linux-gnueabihf/libopen62541.a
 MyOPC_Client: /usr/lib/arm-linux-gnueabihf/libssl.so
 MyOPC_Client: /usr/lib/arm-linux-gnueabihf/libcrypto.so
 MyOPC_Client: CMakeFiles/MyOPC_Client.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/OPCpi/UA_dir/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable MyOPC_Client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/OPCpi/WWW_Mach/UA_SecureClient/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable MyOPC_Client"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyOPC_Client.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -116,6 +131,6 @@ CMakeFiles/MyOPC_Client.dir/clean:
 .PHONY : CMakeFiles/MyOPC_Client.dir/clean
 
 CMakeFiles/MyOPC_Client.dir/depend:
-	cd /home/OPCpi/UA_dir/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/OPCpi/UA_dir /home/OPCpi/UA_dir /home/OPCpi/UA_dir/build /home/OPCpi/UA_dir/build /home/OPCpi/UA_dir/build/CMakeFiles/MyOPC_Client.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/OPCpi/WWW_Mach/UA_SecureClient/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/OPCpi/WWW_Mach/UA_SecureClient /home/OPCpi/WWW_Mach/UA_SecureClient /home/OPCpi/WWW_Mach/UA_SecureClient/build /home/OPCpi/WWW_Mach/UA_SecureClient/build /home/OPCpi/WWW_Mach/UA_SecureClient/build/CMakeFiles/MyOPC_Client.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/MyOPC_Client.dir/depend
 

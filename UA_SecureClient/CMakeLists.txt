@@ -13,6 +13,7 @@ set(OPCUA_SDK_DIR "/usr/local")
 #inlude dirctories
 include_directories("${OPCUA_SDK_DIR}/include/open62541pp")
 include_directories("/usr/local/include")
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 #link directory 
 link_directories("${OPCUA_SDK_DIR}/lib/arm-linux-gnueabihf")
@@ -23,7 +24,10 @@ link_directories("/usr/lib")        # System libraries path
 
 
 #execuatble 
-add_executable(MyOPC_Client src/example_client.cpp)
+add_executable(MyOPC_Client
+                src/example_client.cpp
+                src/service.cpp
+                )
 
 #find pthread library
 find_package(Threads REQUIRED)
