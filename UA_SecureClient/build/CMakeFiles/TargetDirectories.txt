@@ -1,3 +1,0 @@
-/home/OPCpi/UA_dir/build/CMakeFiles/rebuild_cache.dir
-/home/OPCpi/UA_dir/build/CMakeFiles/edit_cache.dir
-/home/OPCpi/UA_dir/build/CMakeFiles/MyOPC_Client.dir
