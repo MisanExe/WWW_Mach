@@ -19,3 +19,7 @@
 
 # Temporary files
 *.tmp
+
+#misc
+CMakeCache.txt/
+/CMakeFiles/
