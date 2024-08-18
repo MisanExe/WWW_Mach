@@ -2,7 +2,6 @@
 
 #include "open62541pp/open62541pp.h"
 #include "open62541pp/Node.h"
-#include "../include/service.h"
 
 int main() {
 	std::cout<<"Enter connection address :  ";
@@ -25,11 +24,10 @@ int main() {
     std::cout<<"Root @ "<<name<<std::endl;
     //log the name
 
-    WebMach::printNodeTree(root);
-    WebMach::find_node(root, "Mach");
-
     std::string input;
-    std::cin>>input;
+
+
+
     while(input.empty()){
         std::cin>>input;
     }

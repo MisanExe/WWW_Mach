@@ -256,8 +256,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/OPCpi/WWW_Mach/UA_SecureClient/build",
-		"source" : "/home/OPCpi/WWW_Mach/UA_SecureClient"
+		"build" : "/home/OPCpi/UA_dir/build",
+		"source" : "/home/OPCpi/UA_dir"
 	},
 	"version" : 
 	{
