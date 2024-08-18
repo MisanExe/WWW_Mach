@@ -23,7 +23,7 @@ link_directories("/usr/lib")        # System libraries path
 
 
 #execuatble 
-add_executable(MyOPC_Client src/example_client.cpp)
+add_executable(MyOPC_Client src/example_client.cpp src/mach_connect.cpp)
 
 #find pthread library
 find_package(Threads REQUIRED)
